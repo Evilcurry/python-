@@ -44,7 +44,7 @@ class Sort:
         arr = self.array
         dad = pos
         son = 2 * dad + 1
-        while son < length:
+        while son < length:#做孩子小于arr_length
             if son + 1 < length and arr[son] < arr[son + 1]:  # 如果存在右孩子，并且右孩子比左孩子大，则将son指向右孩子
                 son = son + 1
             if arr[dad] < arr[son]:
@@ -77,11 +77,11 @@ class Sort:
 
 
 if __name__ == '__main__':
-    my_sort = Sort(10000)
-    # #print(my_sort.array)
+    my_sort = Sort(2)
+    print(my_sort.array)
     # start = time.time()
-    # # my_sort.quick_sort(0,my_sort.length - 1)
+    my_sort.quick_sort(0,my_sort.length - 1)
     # my_sort.heap_sort()
     # end = time.time()
-    # #print(my_sort.array)
+    print(my_sort.array)
     # print(f'It cost {end - start}')
