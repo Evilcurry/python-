@@ -39,7 +39,7 @@ print(sorted(student_objects, key=lambda student: student.age)) # sort by age
 #print(student)
 
 
-gameresult = [
+game_result = [
 { "name":"Bob", "wins":10, "losses":3, "rating":75.00 },
     { "name":"David", "wins":3, "losses":5, "rating":57.00 },
     { "name":"Carol", "wins":4, "losses":5, "rating":57.00 },
@@ -52,4 +52,4 @@ print(f'引用operator系列，多个排序')
 print(sorted(student_tuples, key=itemgetter(1,2)))
 print(sorted(student_tuples, key=lambda x:(x[1],-x[2])))
 print(sorted(student_objects, key=attrgetter('age', 'name')))
-print(sorted(gameresult, key=itemgetter('rating', 'name')))
+print(sorted(game_result, key=itemgetter('rating', 'name')))

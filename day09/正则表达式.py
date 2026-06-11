@@ -1,5 +1,4 @@
 import re
-from mimetypes import init
 
 
 def single():
